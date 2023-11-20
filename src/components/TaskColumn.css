@@ -7,3 +7,19 @@
   width: 30px;
   margin-right: 10px;
 }
+
+.task_card_bottom_line {
+  display: flex;
+  align-items: center;
+}
+
+.task_delete {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}

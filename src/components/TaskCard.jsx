@@ -1,5 +1,5 @@
 import Tag from "./Tag";
-import delete_icon from "../assets/delete.png";
+import deleteIcon from "../assets/delete.png";
 import "./TaskCard.css";
 
 const TaskCard = () => {
@@ -13,7 +13,7 @@ const TaskCard = () => {
           <Tag tagName="CSS" />
         </div>
         <div className="task_delete">
-          <img className="delete_icon" src={delete_icon} alt="" />
+          <img className="delete_icon" src={deleteIcon} alt="" />
         </div>
       </div>
     </article>
