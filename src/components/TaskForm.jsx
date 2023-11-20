@@ -16,7 +16,7 @@ const TaskForm = () => {
             <Tag tagName="HTML" />
             <Tag tagName="CSS" />
             <Tag tagName="JavaScript" />
-            <Tag tagName="React" />
+            <Tag tagName="REACT" />
           </div>
           <div>
             <select className="task_status">
