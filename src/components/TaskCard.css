@@ -1,4 +1,4 @@
-/* .task_card {
+.task_card {
   width: 100%;
   min-height: 100px;
   border: 1px solid #dcdcdc;
@@ -13,6 +13,11 @@
   margin-bottom: 15px;
 }
 
+.task_card_bottom_line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .task_delete {
   width: 35px;
   height: 35px;
@@ -36,4 +41,4 @@
 
 .task_delete:hover .delete_icon {
   opacity: 80%;
-} */
+}
