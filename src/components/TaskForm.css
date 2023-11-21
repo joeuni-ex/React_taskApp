@@ -63,6 +63,7 @@
   .task_form_bottom_line > div {
     align-items: center;
     display: flex;
+    margin-left: 5px;
   }
 
   .task_status {
@@ -70,7 +71,7 @@
     font-weight: 500;
     border: 1px solid #999;
     border-radius: 5px;
-    width: 70px;
+    width: 60px;
     height: 35px;
     padding: 0 5px;
   }
@@ -81,7 +82,9 @@
     background-color: #6457f9;
     color: #fff;
     border-radius: 5px;
+    width: 35px;
     height: 30px;
+    margin-left: 5px;
     border: none;
     cursor: pointer;
   }

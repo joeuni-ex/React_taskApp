@@ -46,7 +46,7 @@
 
 @media screen and (max-width: 768px) {
   .task_card {
-    min-width: 200px;
+    min-width: 170px;
     min-height: 100px;
     border: 1px solid #dcdcdc;
     border-radius: 10px;
