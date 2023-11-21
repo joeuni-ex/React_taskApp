@@ -1,4 +1,6 @@
 .task_column_heading {
+  position: fixed;
+  left: 8%;
   margin-top: 20px;
   display: flex;
   align-items: center;

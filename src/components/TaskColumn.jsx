@@ -14,12 +14,14 @@ export default function TaskColumn({
         <img className="task_column_icon" src={icon} alt="" />
         {title}
       </h2>
+
       <section className="task_column">
         {tasks.length > 0
           ? tasks.map(
               (task, index) =>
                 task.status === status && (
                   <TaskCard
+                    key={index}
                     handleDelete={handleDelete}
                     index={index}
                     title={task.task}

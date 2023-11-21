@@ -6,6 +6,7 @@ import doingIcon from "./assets/glowing-star.png";
 import doneIcon from "./assets/check-mark-button.png";
 import TaskCard from "./components/TaskCard";
 import { useEffect, useState } from "react";
+import ScrollContainer from "react-indiana-drag-scroll";
 
 //로컬 스토리지에 있는 데이터 가져오기
 const saveTasks = localStorage.getItem("tasks");
@@ -28,7 +29,7 @@ function App() {
       <div className="app">
         <TaskForm setTasks={setTasks} />
         <main className="app_main">
-          <div className="taskList">
+          <ScrollContainer className="taskList scroll-container">
             <TaskColumn
               title="할 일"
               icon={todoIcon}
@@ -36,9 +37,9 @@ function App() {
               status="todo"
               handleDelete={handleDelete}
             />
-          </div>
+          </ScrollContainer>
           <hr />
-          <div className="taskList">
+          <ScrollContainer className="taskList scroll-container">
             <TaskColumn
               title="진행중"
               icon={doingIcon}
@@ -46,15 +47,17 @@ function App() {
               status="doing"
               handleDelete={handleDelete}
             />
-          </div>
+          </ScrollContainer>
           <hr />
-          <TaskColumn
-            title="완 료"
-            icon={doneIcon}
-            tasks={tasks}
-            status="done"
-            handleDelete={handleDelete}
-          />
+          <ScrollContainer className="taskList scroll-container">
+            <TaskColumn
+              title="완 료"
+              icon={doneIcon}
+              tasks={tasks}
+              status="done"
+              handleDelete={handleDelete}
+            />
+          </ScrollContainer>
         </main>
       </div>
     </>
