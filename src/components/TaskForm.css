@@ -7,6 +7,7 @@
 }
 
 .app_header > form {
+  margin-top: 20px;
   width: 50%;
 }
 
@@ -29,7 +30,6 @@
 .task_form_bottom_line {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .task_status {
@@ -53,4 +53,36 @@
   margin-left: 10px;
   border: none;
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .app_header > form {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .task_form_bottom_line > div {
+    align-items: center;
+    display: flex;
+  }
+
+  .task_status {
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid #999;
+    border-radius: 5px;
+    width: 70px;
+    height: 35px;
+    padding: 0 5px;
+  }
+
+  .task_submit {
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #6457f9;
+    color: #fff;
+    border-radius: 5px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+  }
 }

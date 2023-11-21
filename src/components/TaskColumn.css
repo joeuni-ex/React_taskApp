@@ -1,5 +1,5 @@
 .task_column_heading {
-  position: fixed;
+  position: absolute;
   left: 8%;
   margin-top: 20px;
   display: flex;
@@ -14,4 +14,5 @@
 .task_card_bottom_line {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }

@@ -1,6 +1,6 @@
 .task_card {
   width: 350px;
-  min-height: 120px;
+  min-height: 100px;
   border: 1px solid #dcdcdc;
   border-radius: 10px;
   padding: 10px;
@@ -37,8 +37,20 @@
   width: 20px;
   opacity: 50%;
   transition: all 0.3s ease-in-out;
+  background-color: #f1f0e8;
 }
 
 .task_delete:hover .delete_icon {
   opacity: 80%;
+}
+
+@media screen and (max-width: 768px) {
+  .task_card {
+    min-width: 200px;
+    min-height: 100px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 45px 15px 15px;
+  }
 }
