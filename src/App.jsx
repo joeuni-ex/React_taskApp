@@ -28,20 +28,26 @@ function App() {
       <div className="app">
         <TaskForm setTasks={setTasks} />
         <main className="app_main">
-          <TaskColumn
-            title="할 일"
-            icon={todoIcon}
-            tasks={tasks}
-            status="todo"
-            handleDelete={handleDelete}
-          />
-          <TaskColumn
-            title="진행중"
-            icon={doingIcon}
-            tasks={tasks}
-            status="doing"
-            handleDelete={handleDelete}
-          />
+          <div className="taskList">
+            <TaskColumn
+              title="할 일"
+              icon={todoIcon}
+              tasks={tasks}
+              status="todo"
+              handleDelete={handleDelete}
+            />
+          </div>
+          <hr />
+          <div className="taskList">
+            <TaskColumn
+              title="진행중"
+              icon={doingIcon}
+              tasks={tasks}
+              status="doing"
+              handleDelete={handleDelete}
+            />
+          </div>
+          <hr />
           <TaskColumn
             title="완 료"
             icon={doneIcon}

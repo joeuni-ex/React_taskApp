@@ -9,24 +9,26 @@ export default function TaskColumn({
   handleDelete,
 }) {
   return (
-    <section className="task_column">
+    <>
       <h2 className="task_column_heading">
         <img className="task_column_icon" src={icon} alt="" />
         {title}
       </h2>
-      {tasks.length > 0
-        ? tasks.map(
-            (task, index) =>
-              task.status === status && (
-                <TaskCard
-                  handleDelete={handleDelete}
-                  index={index}
-                  title={task.task}
-                  tags={task.tags}
-                />
-              )
-          )
-        : null}
-    </section>
+      <section className="task_column">
+        {tasks.length > 0
+          ? tasks.map(
+              (task, index) =>
+                task.status === status && (
+                  <TaskCard
+                    handleDelete={handleDelete}
+                    index={index}
+                    title={task.task}
+                    tags={task.tags}
+                  />
+                )
+            )
+          : null}
+      </section>
+    </>
   );
 }
