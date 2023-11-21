@@ -22,6 +22,12 @@ const TaskForm = ({ setTasks }) => {
     setTasks((prev) => {
       return [...prev, taskData]; // 새 task추가
     });
+    //처음처럼 TaskData를 리셋
+    setTaskData({
+      task: "",
+      status: "todo",
+      tags: [],
+    });
   };
 
   //선택한 태그를 tags에 추가한다( 있으면 삭제 없으면 추가)
