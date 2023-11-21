@@ -1,8 +1,9 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 일정을 입력 및 추가하여 본인의 일정을 관리 할 수 있는 앱
 
-Currently, two official plugins are available:
+    관련 태그도 추가하여 꾸밀 수 있고,
+    일정이 많아지면 좌우로 스크롤하여 확인 가능하다.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+    https://taskapp-joeuni.netlify.app/
