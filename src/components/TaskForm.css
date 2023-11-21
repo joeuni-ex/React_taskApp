@@ -77,15 +77,20 @@
   }
 
   .task_submit {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
     background-color: #6457f9;
     color: #fff;
     border-radius: 5px;
-    width: 35px;
-    height: 30px;
+    width: 65px;
+    height: 35px;
     margin-left: 5px;
     border: none;
     cursor: pointer;
+  }
+  .task_form_bottom_line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

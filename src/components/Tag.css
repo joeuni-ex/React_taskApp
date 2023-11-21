@@ -8,3 +8,16 @@
   margin-right: 10px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+  .tag {
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #f9f9f9;
+    border: 1px solid #dfe3e6;
+    padding: 3px 3px;
+    margin-right: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
